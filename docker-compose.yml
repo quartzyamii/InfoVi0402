@@ -1,0 +1,25 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: infovi-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-infovi}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-infovi_secret}
+      POSTGRES_DB: ${POSTGRES_DB:-infovi_viz}
+    ports:
+      - "${POSTGRES_PORT:-5432}:5432"
+    volumes:
+      - infovi_pgdata:/var/lib/postgresql/data
+
+  adminer:
+    image: adminer:4
+    container_name: infovi-adminer
+    restart: unless-stopped
+    ports:
+      - "${ADMINER_PORT:-8080}:8080"
+    depends_on:
+      - postgres
+
+volumes:
+  infovi_pgdata:

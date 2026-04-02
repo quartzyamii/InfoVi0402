@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>InfoVi — DB 콘솔</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="layout">
+      <header class="header">
+        <div class="brand">
+          <span class="logo" aria-hidden="true">◉</span>
+          <div>
+            <h1>InfoVi 데이터베이스 콘솔</h1>
+            <p class="sub">
+              시각화 프로젝트용 PostgreSQL·Adminer 스택을 Docker로
+              올리고 내릴 수 있습니다.
+            </p>
+            <p class="sub" style="margin-top: 0.5rem">
+              <a href="/" style="color: var(--accent)">← 트리맵 대시보드</a>
+            </p>
+          </div>
+        </div>
+        <span id="dockerBadge" class="badge badge-muted" role="status"
+          >Docker 확인 중…</span
+        >
+      </header>
+
+      <section class="panel">
+        <h2>컨트롤</h2>
+        <div class="actions">
+          <button type="button" id="btnStart" class="btn primary">
+            스택 시작
+          </button>
+          <button type="button" id="btnStop" class="btn">스택 중지</button>
+          <button type="button" id="btnRefresh" class="btn ghost">
+            상태 새로고침
+          </button>
+          <button type="button" id="btnImport" class="btn">
+            JSON -> DB 적재
+          </button>
+        </div>
+        <label class="chk">
+          <input type="checkbox" id="chkRemoveVol" />
+          중지 시 볼륨까지 삭제 (DB 데이터 초기화)
+        </label>
+        <p id="msg" class="msg" role="status"></p>
+      </section>
+
+      <section class="panel">
+        <h2>데이터 소스</h2>
+        <p class="hint">
+          현재 원본 파일: <code id="sourcePath">확인 중…</code>
+        </p>
+        <p class="hint">
+          적재 대상 테이블: <code>adobe_app_stats</code>,
+          <code>adobe_top_files</code>
+        </p>
+      </section>
+
+      <section class="panel">
+        <h2>연결 정보</h2>
+        <p class="hint">
+          포트는 프로젝트 루트의 <code>.env</code>로 바꿀 수 있습니다. 없으면
+          아래 기본값을 사용합니다.
+        </p>
+        <dl class="conn">
+          <div>
+            <dt>PostgreSQL</dt>
+            <dd>
+              <code id="connString"
+                >postgresql://infovi:&lt;비밀번호&gt;@127.0.0.1:5432/infovi_viz</code
+              >
+            </dd>
+          </div>
+          <div>
+            <dt>Adminer (웹에서 DB 조회)</dt>
+            <dd>
+              <a id="adminerLink" href="http://127.0.0.1:8080" target="_blank" rel="noreferrer"
+                >http://127.0.0.1:8080</a
+              >
+              — 시스템: <code>PostgreSQL</code>, 서버: <code>postgres</code>,
+              사용자·DB·비밀번호는 <code>.env.example</code> 참고
+            </dd>
+          </div>
+        </dl>
+      </section>
+
+      <section class="panel">
+        <h2>컨테이너 상태</h2>
+        <div id="tableWrap" class="table-wrap">
+          <table class="table" aria-label="Docker Compose 서비스 상태">
+            <thead>
+              <tr>
+                <th>이름</th>
+                <th>서비스</th>
+                <th>상태</th>
+                <th>포트</th>
+              </tr>
+            </thead>
+            <tbody id="rows">
+              <tr>
+                <td colspan="4" class="empty">불러오는 중…</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <p>
+          이 서버는 로컬(<code>127.0.0.1</code>)에서만 listen 하도록
+          되어 있습니다. 실행: <code>yarn start</code> (Docker Desktop 필요)
+        </p>
+      </footer>
+    </div>
+    <script src="/app.js"></script>
+  </body>
+</html>

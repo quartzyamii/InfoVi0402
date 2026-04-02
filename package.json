@@ -1,0 +1,14 @@
+{
+  "name": "infovi-db-console",
+  "version": "1.0.0",
+  "private": true,
+  "description": "웹에서 시각화용 데이터베이스(PostgreSQL)를 띄우는 콘솔",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

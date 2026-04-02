@@ -1,0 +1,260 @@
+:root {
+  --bg: #0c0f14;
+  --panel: #141a24;
+  --border: #243044;
+  --text: #e8edf5;
+  --muted: #8b9bb5;
+  --accent: #3d8bfd;
+  --accent-dim: #2563c9;
+  --ok: #34d399;
+  --warn: #fbbf24;
+  --danger: #f87171;
+  --radius: 12px;
+  font-family: "Pretendard", "Apple SD Gothic Neo", system-ui, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(1200px 600px at 20% -10%, #1a2a44 0%, transparent 55%),
+    radial-gradient(900px 500px at 100% 0%, #152238 0%, transparent 50%), var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+}
+
+.layout {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 3rem;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.75rem;
+}
+
+.brand {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.logo {
+  font-size: 1.75rem;
+  color: var(--accent);
+  line-height: 1;
+  margin-top: 0.15rem;
+}
+
+h1 {
+  font-size: 1.45rem;
+  font-weight: 700;
+  margin: 0 0 0.35rem;
+  letter-spacing: -0.02em;
+}
+
+.sub {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+  max-width: 36rem;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border: 1px solid var(--border);
+  white-space: nowrap;
+}
+
+.badge-ok {
+  color: var(--ok);
+  border-color: rgba(52, 211, 153, 0.35);
+  background: rgba(52, 211, 153, 0.08);
+}
+
+.badge-warn {
+  color: var(--warn);
+  border-color: rgba(251, 191, 36, 0.35);
+  background: rgba(251, 191, 36, 0.08);
+}
+
+.badge-muted {
+  color: var(--muted);
+}
+
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.35rem;
+  margin-bottom: 1rem;
+}
+
+.panel h2 {
+  margin: 0 0 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 0.75rem;
+}
+
+.btn {
+  cursor: pointer;
+  border: 1px solid var(--border);
+  background: #1c2533;
+  color: var(--text);
+  padding: 0.55rem 1rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.btn:hover:not(:disabled) {
+  background: #243047;
+  border-color: #354868;
+}
+
+.btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.btn.primary {
+  background: var(--accent);
+  border-color: var(--accent-dim);
+  color: #fff;
+}
+
+.btn.primary:hover:not(:disabled) {
+  background: #5198ff;
+}
+
+.btn.ghost {
+  background: transparent;
+}
+
+.chk {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+  cursor: pointer;
+  user-select: none;
+}
+
+.msg {
+  min-height: 1.25rem;
+  margin: 0.75rem 0 0;
+  font-size: 0.88rem;
+  color: var(--muted);
+}
+
+.msg.err {
+  color: var(--danger);
+}
+
+.msg.ok {
+  color: var(--ok);
+}
+
+.hint {
+  margin: 0 0 1rem;
+  font-size: 0.88rem;
+  color: var(--muted);
+}
+
+.conn {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.conn dt {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  margin-bottom: 0.25rem;
+}
+
+.conn dd {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+code {
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  font-size: 0.86em;
+  background: rgba(0, 0, 0, 0.35);
+  padding: 0.12rem 0.35rem;
+  border-radius: 4px;
+}
+
+a {
+  color: var(--accent);
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+}
+
+.table th,
+.table td {
+  text-align: left;
+  padding: 0.6rem 0.75rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.table th {
+  color: var(--muted);
+  font-weight: 600;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.table td.empty {
+  color: var(--muted);
+  text-align: center;
+  padding: 1.25rem;
+}
+
+.footer {
+  margin-top: 2rem;
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+.footer p {
+  margin: 0;
+}
