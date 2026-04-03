@@ -54,34 +54,64 @@
         "totalSizeBytes": 10522669875,
         "children": [
           {
-            "name": "brand_kit_v3.ai",
-            "value": 3221225472,
-            "size_human": "3.0 GB",
-            "extension": ".ai"
+            "name": "unidev cardnews templates 최종본.ai",
+            "value": 2145257009,
+            "extension": ".ai",
+            "size_human": "2.00 GB"
           },
           {
-            "name": "illustrations_2024.ai",
-            "value": 2684354560,
-            "size_human": "2.5 GB",
-            "extension": ".ai"
+            "name": "unidev cardnews templates.ai",
+            "value": 1832703008,
+            "extension": ".ai",
+            "size_human": "1.71 GB"
           },
           {
-            "name": "icons_master.ai",
-            "value": 2147483648,
-            "size_human": "2.0 GB",
-            "extension": ".ai"
+            "name": "커뮤니케이션디자인2.ai",
+            "value": 1359057719,
+            "extension": ".ai",
+            "size_human": "1.27 GB"
           },
           {
-            "name": "layout_export.ai",
-            "value": 1610612736,
-            "size_human": "1.5 GB",
-            "extension": ".ai"
+            "name": "무제-1.ai",
+            "value": 1015342661,
+            "extension": ".ai",
+            "size_human": "968.31 MB"
           },
           {
-            "name": "misc_assets.ai",
-            "value": 818998059,
-            "size_human": "782 MB",
-            "extension": ".ai"
+            "name": "251117 포트폴리오 사본의 사본.ai",
+            "value": 882582131,
+            "extension": ".ai",
+            "size_human": "841.70 MB"
+          },
+          {
+            "name": "박혜진1-층2탄.ai",
+            "value": 725583680,
+            "extension": ".ai",
+            "size_human": "691.97 MB"
+          },
+          {
+            "name": "보드게임판사본.ai",
+            "value": 672834644,
+            "extension": ".ai",
+            "size_human": "641.67 MB"
+          },
+          {
+            "name": "SKY.ai",
+            "value": 654548680,
+            "extension": ".ai",
+            "size_human": "624.23 MB"
+          },
+          {
+            "name": "2025년 상반기 사본 0803ai.ai",
+            "value": 653119656,
+            "extension": ".ai",
+            "size_human": "622.86 MB"
+          },
+          {
+            "name": "2020년.ai",
+            "value": 581640687,
+            "extension": ".ai",
+            "size_human": "554.70 MB"
           }
         ]
       },
@@ -92,25 +122,67 @@
         "color": "#2E9DEF",
         "extension": ".psd",
         "legendLabel": "Photoshop (.psd)",
-        "totalSizeBytes": 2470464266,
+        "totalSizeBytes": 2469606195,
         "children": [
           {
-            "name": "composite_layers.psd",
-            "value": 1073741824,
-            "size_human": "1.0 GB",
-            "extension": ".psd"
+            "name": "horizontal-brochure-mockup.psd",
+            "value": 513338168,
+            "extension": ".psd",
+            "size_human": "489.56 MB"
           },
           {
-            "name": "retouch_batch.psd",
-            "value": 805306368,
-            "size_human": "768 MB",
-            "extension": ".psd"
+            "name": "01 Free A3 Wall Poster Mockup.psd",
+            "value": 331681791,
+            "extension": ".psd",
+            "size_human": "316.32 MB"
           },
           {
-            "name": "textures.psd",
-            "value": 591415094,
-            "size_human": "564 MB",
-            "extension": ".psd"
+            "name": "03 Free A3 Wall Poster Mockup.psd",
+            "value": 311507711,
+            "extension": ".psd",
+            "size_human": "297.08 MB"
+          },
+          {
+            "name": "02 Free A3 Wall Poster Mockup.psd",
+            "value": 306616120,
+            "extension": ".psd",
+            "size_human": "292.41 MB"
+          },
+          {
+            "name": "A4 Landscape Brochure Mockup.psd",
+            "value": 278242896,
+            "extension": ".psd",
+            "size_human": "265.35 MB"
+          },
+          {
+            "name": "Screen (3).psd",
+            "value": 229187505,
+            "extension": ".psd",
+            "size_human": "218.57 MB"
+          },
+          {
+            "name": "Image0001.psd",
+            "value": 143041695,
+            "extension": ".psd",
+            "size_human": "136.42 MB"
+          },
+          {
+            "name": "Free_A5_Flyer_Mockup_4.psd",
+            "value": 129901147,
+            "extension": ".psd",
+            "size_human": "123.88 MB"
+          },
+          {
+            "name": "스티커종합화면01.psd",
+            "value": 107664827,
+            "extension": ".psd",
+            "size_human": "102.68 MB"
+          },
+          {
+            "name": "Free_Business_Card_Mockup_1.psd",
+            "value": 118424335,
+            "extension": ".psd",
+            "size_human": "112.94 MB"
           }
         ]
       },
@@ -121,25 +193,43 @@
         "color": "#E24E4E",
         "extension": ".pdf",
         "legendLabel": "Acrobat (PDF) (.pdf)",
-        "totalSizeBytes": 1825361108,
+        "totalSizeBytes": 1825361101,
         "children": [
           {
-            "name": "archive_manual.pdf",
-            "value": 805306368,
-            "size_human": "768 MB",
-            "extension": ".pdf"
+            "name": "portfolio_2024.pdf",
+            "value": 646699361,
+            "extension": ".pdf",
+            "size_human": "616.74 MB"
           },
           {
-            "name": "spec_sheets.pdf",
-            "value": 536870912,
-            "size_human": "512 MB",
-            "extension": ".pdf"
+            "name": "manual_archive.pdf",
+            "value": 427656029,
+            "extension": ".pdf",
+            "size_human": "407.84 MB"
           },
           {
-            "name": "deliverables.pdf",
-            "value": 483193828,
-            "size_human": "461 MB",
-            "extension": ".pdf"
+            "name": "spec_document.pdf",
+            "value": 292057776,
+            "extension": ".pdf",
+            "size_human": "278.53 MB"
+          },
+          {
+            "name": "slides_export.pdf",
+            "value": 203397380,
+            "extension": ".pdf",
+            "size_human": "193.97 MB"
+          },
+          {
+            "name": "reference_scan.pdf",
+            "value": 161674840,
+            "extension": ".pdf",
+            "size_human": "154.19 MB"
+          },
+          {
+            "name": "invoice_batch.pdf",
+            "value": 93875715,
+            "extension": ".pdf",
+            "size_human": "89.53 MB"
           }
         ]
       },
@@ -153,16 +243,40 @@
         "totalSizeBytes": 38797312,
         "children": [
           {
-            "name": "catalog_master.indd",
-            "value": 22020096,
-            "size_human": "21 MB",
-            "extension": ".indd"
+            "name": "Convergence Design_2 2C2100Shoppingmall_240927.indd",
+            "value": 11181980,
+            "extension": ".indd",
+            "size_human": "10.66 MB"
           },
           {
-            "name": "brochure_v2.indd",
-            "value": 16777216,
-            "size_human": "16 MB",
-            "extension": ".indd"
+            "name": "Convergence Design_2 2C2100Shoppingmall_240927 사본.indd",
+            "value": 10877846,
+            "extension": ".indd",
+            "size_human": "10.37 MB"
+          },
+          {
+            "name": "디자인_본편_레이아웃.indd",
+            "value": 6619975,
+            "extension": ".indd",
+            "size_human": "6.31 MB"
+          },
+          {
+            "name": "학기과제_중간.indd",
+            "value": 6396944,
+            "extension": ".indd",
+            "size_human": "6.10 MB"
+          },
+          {
+            "name": "아이디어_스케치.indd",
+            "value": 2260726,
+            "extension": ".indd",
+            "size_human": "2.16 MB"
+          },
+          {
+            "name": "표지_시안.indd",
+            "value": 1459841,
+            "extension": ".indd",
+            "size_human": "1.39 MB"
           }
         ]
       },
@@ -176,16 +290,64 @@
         "totalSizeBytes": 30408704,
         "children": [
           {
-            "name": "motion_pack.aep",
-            "value": 18874368,
-            "size_human": "18 MB",
-            "extension": ".aep"
+            "name": "커뮤니케이션디자인2.aep",
+            "value": 7185133,
+            "extension": ".aep",
+            "size_human": "6.85 MB"
           },
           {
-            "name": "lower_thirds.aep",
-            "value": 11534336,
-            "size_human": "11 MB",
-            "extension": ".aep"
+            "name": "커뮤니케이션디자인2 복사본.aep",
+            "value": 1613656,
+            "extension": ".aep",
+            "size_human": "1.54 MB"
+          },
+          {
+            "name": "커뮤니케이션디자인 과제중간.aep",
+            "value": 2856608,
+            "extension": ".aep",
+            "size_human": "2.72 MB"
+          },
+          {
+            "name": "커뮤니케이션디자인 최종제출.aep",
+            "value": 4579296,
+            "extension": ".aep",
+            "size_human": "4.37 MB"
+          },
+          {
+            "name": "타이포모션_드래프트.aep",
+            "value": 3379957,
+            "extension": ".aep",
+            "size_human": "3.22 MB"
+          },
+          {
+            "name": "로고애니_짧게.aep",
+            "value": 3052864,
+            "extension": ".aep",
+            "size_human": "2.91 MB"
+          },
+          {
+            "name": "시퀀스_백업.aep",
+            "value": 2725771,
+            "extension": ".aep",
+            "size_human": "2.60 MB"
+          },
+          {
+            "name": "인트로_컷.aep",
+            "value": 2071586,
+            "extension": ".aep",
+            "size_human": "1.98 MB"
+          },
+          {
+            "name": "아웃트로_컷.aep",
+            "value": 1635463,
+            "extension": ".aep",
+            "size_human": "1.56 MB"
+          },
+          {
+            "name": "조정용_프리컴프.aep",
+            "value": 1308370,
+            "extension": ".aep",
+            "size_human": "1.25 MB"
           }
         ]
       },
@@ -199,10 +361,16 @@
         "totalSizeBytes": 4194304,
         "children": [
           {
-            "name": "export_package.idml",
-            "value": 4194304,
-            "size_human": "4 MB",
-            "extension": ".idml"
+            "name": "Convergence Design_22C2100Shoppingmall_240927.idml",
+            "value": 3806331,
+            "extension": ".idml",
+            "size_human": "3.63 MB"
+          },
+          {
+            "name": "package_assets.idml",
+            "value": 387973,
+            "extension": ".idml",
+            "size_human": "379 KB"
           }
         ]
       }
