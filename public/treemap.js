@@ -722,21 +722,50 @@ function renderTreemap(data) {
   });
 
   setStatus(
-    `데이터: ${data.source === "db" ? "PostgreSQL" : "JSON 파일"} · 항목 ${cats.length}개 범주`,
+    `데이터: ${
+      data.source === "db"
+        ? "PostgreSQL"
+        : data.source === "static"
+          ? "정적 treemap-data.json"
+          : "JSON 파일"
+    } · 항목 ${cats.length}개 범주`,
     false
   );
+}
+
+async function fetchTreemapPayload() {
+  const apiUrl = new URL("/api/treemap-data", window.location.origin).href;
+  try {
+    const r = await fetch(`${apiUrl}?_=${Date.now()}`, {
+      cache: "no-store",
+      headers: { Accept: "application/json" },
+    });
+    if (r.ok) {
+      const data = await r.json();
+      if (!data.error) return data;
+    }
+  } catch {
+    /* 네트워크 또는 GitHub Pages 등 API 없음 */
+  }
+  const staticUrl = new URL("treemap-data.json", window.location.href).href;
+  const r2 = await fetch(`${staticUrl}?_=${Date.now()}`, {
+    cache: "no-store",
+    headers: { Accept: "application/json" },
+  });
+  if (!r2.ok) {
+    throw new Error(
+      "데이터를 불러올 수 없습니다. 로컬에서는 yarn start 후 사용하거나, GitHub Pages에는 public/treemap-data.json을 두세요."
+    );
+  }
+  const data = await r2.json();
+  if (data.error) throw new Error(data.error);
+  return data;
 }
 
 async function loadAndDraw() {
   setStatus("데이터 불러오는 중…", false);
   try {
-    const r = await fetch(`/api/treemap-data?_=${Date.now()}`, {
-      cache: "no-store",
-      headers: { Accept: "application/json" },
-    });
-    if (!r.ok) throw new Error(`HTTP ${r.status}`);
-    const data = await r.json();
-    if (data.error) throw new Error(data.error);
+    const data = await fetchTreemapPayload();
 
     tmTitle.textContent = data.title || "MY ADOBE FILE DISTRIBUTION";
     tmSub.textContent = data.scanPathDisplay || data.scanPath || "";
