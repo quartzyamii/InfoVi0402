@@ -1,11 +1,211 @@
 {
   "title": "MY ADOBE FILE DISTRIBUTION",
-  "scanPath": "",
-  "scanPathDisplay": "GitHub Pages — public/treemap-data.json을 편집해 데이터를 넣으세요",
-  "source": "static",
-  "legend": [],
+  "scanPath": "/Users/kimminjin/Desktop",
+  "scanPathDisplay": "/Users/kimminjin/Desktop",
+  "source": "json",
+  "legend": [
+    {
+      "extension": ".ai",
+      "label": "Illustrator (.ai)",
+      "color": "#FF9A00",
+      "active": true
+    },
+    {
+      "extension": ".psd",
+      "label": "Photoshop (.psd)",
+      "color": "#2E9DEF",
+      "active": true
+    },
+    {
+      "extension": ".pdf",
+      "label": "Acrobat (PDF) (.pdf)",
+      "color": "#E24E4E",
+      "active": true
+    },
+    {
+      "extension": ".indd",
+      "label": "InDesign (.indd)",
+      "color": "#FF4F90",
+      "active": true
+    },
+    {
+      "extension": ".aep",
+      "label": "After Effects (.aep)",
+      "color": "#9999F8",
+      "active": true
+    },
+    {
+      "extension": ".idml",
+      "label": "InDesign (.idml)",
+      "color": "#FF69A7",
+      "active": true
+    }
+  ],
   "tree": {
     "name": "root",
-    "children": []
+    "children": [
+      {
+        "name": "Illustrator .ai",
+        "headerLeft": "Illustrator",
+        "headerRight": ".ai",
+        "color": "#FF9A00",
+        "extension": ".ai",
+        "legendLabel": "Illustrator (.ai)",
+        "totalSizeBytes": 10522669875,
+        "children": [
+          {
+            "name": "brand_kit_v3.ai",
+            "value": 3221225472,
+            "size_human": "3.0 GB",
+            "extension": ".ai"
+          },
+          {
+            "name": "illustrations_2024.ai",
+            "value": 2684354560,
+            "size_human": "2.5 GB",
+            "extension": ".ai"
+          },
+          {
+            "name": "icons_master.ai",
+            "value": 2147483648,
+            "size_human": "2.0 GB",
+            "extension": ".ai"
+          },
+          {
+            "name": "layout_export.ai",
+            "value": 1610612736,
+            "size_human": "1.5 GB",
+            "extension": ".ai"
+          },
+          {
+            "name": "misc_assets.ai",
+            "value": 818998059,
+            "size_human": "782 MB",
+            "extension": ".ai"
+          }
+        ]
+      },
+      {
+        "name": "Photoshop .psd",
+        "headerLeft": "Photoshop",
+        "headerRight": ".psd",
+        "color": "#2E9DEF",
+        "extension": ".psd",
+        "legendLabel": "Photoshop (.psd)",
+        "totalSizeBytes": 2470464266,
+        "children": [
+          {
+            "name": "composite_layers.psd",
+            "value": 1073741824,
+            "size_human": "1.0 GB",
+            "extension": ".psd"
+          },
+          {
+            "name": "retouch_batch.psd",
+            "value": 805306368,
+            "size_human": "768 MB",
+            "extension": ".psd"
+          },
+          {
+            "name": "textures.psd",
+            "value": 591415094,
+            "size_human": "564 MB",
+            "extension": ".psd"
+          }
+        ]
+      },
+      {
+        "name": "Acrobat (PDF) .pdf",
+        "headerLeft": "Acrobat (PDF)",
+        "headerRight": ".pdf",
+        "color": "#E24E4E",
+        "extension": ".pdf",
+        "legendLabel": "Acrobat (PDF) (.pdf)",
+        "totalSizeBytes": 1825361108,
+        "children": [
+          {
+            "name": "archive_manual.pdf",
+            "value": 805306368,
+            "size_human": "768 MB",
+            "extension": ".pdf"
+          },
+          {
+            "name": "spec_sheets.pdf",
+            "value": 536870912,
+            "size_human": "512 MB",
+            "extension": ".pdf"
+          },
+          {
+            "name": "deliverables.pdf",
+            "value": 483193828,
+            "size_human": "461 MB",
+            "extension": ".pdf"
+          }
+        ]
+      },
+      {
+        "name": "InDesign .indd",
+        "headerLeft": "InDesign",
+        "headerRight": ".indd",
+        "color": "#FF4F90",
+        "extension": ".indd",
+        "legendLabel": "InDesign (.indd)",
+        "totalSizeBytes": 38797312,
+        "children": [
+          {
+            "name": "catalog_master.indd",
+            "value": 22020096,
+            "size_human": "21 MB",
+            "extension": ".indd"
+          },
+          {
+            "name": "brochure_v2.indd",
+            "value": 16777216,
+            "size_human": "16 MB",
+            "extension": ".indd"
+          }
+        ]
+      },
+      {
+        "name": "After Effects .aep",
+        "headerLeft": "After Effects",
+        "headerRight": ".aep",
+        "color": "#9999F8",
+        "extension": ".aep",
+        "legendLabel": "After Effects (.aep)",
+        "totalSizeBytes": 30408704,
+        "children": [
+          {
+            "name": "motion_pack.aep",
+            "value": 18874368,
+            "size_human": "18 MB",
+            "extension": ".aep"
+          },
+          {
+            "name": "lower_thirds.aep",
+            "value": 11534336,
+            "size_human": "11 MB",
+            "extension": ".aep"
+          }
+        ]
+      },
+      {
+        "name": "InDesign .idml",
+        "headerLeft": "InDesign",
+        "headerRight": ".idml",
+        "color": "#FF69A7",
+        "extension": ".idml",
+        "legendLabel": "InDesign (.idml)",
+        "totalSizeBytes": 4194304,
+        "children": [
+          {
+            "name": "export_package.idml",
+            "value": 4194304,
+            "size_human": "4 MB",
+            "extension": ".idml"
+          }
+        ]
+      }
+    ]
   }
 }

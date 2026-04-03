@@ -734,18 +734,22 @@ function renderTreemap(data) {
 }
 
 async function fetchTreemapPayload() {
-  const apiUrl = new URL("/api/treemap-data", window.location.origin).href;
-  try {
-    const r = await fetch(`${apiUrl}?_=${Date.now()}`, {
-      cache: "no-store",
-      headers: { Accept: "application/json" },
-    });
-    if (r.ok) {
-      const data = await r.json();
-      if (!data.error) return data;
+  const tryApiFirst =
+    location.hostname !== "github.io" && location.protocol !== "file:";
+  if (tryApiFirst) {
+    const apiUrl = new URL("/api/treemap-data", window.location.origin).href;
+    try {
+      const r = await fetch(`${apiUrl}?_=${Date.now()}`, {
+        cache: "no-store",
+        headers: { Accept: "application/json" },
+      });
+      if (r.ok) {
+        const data = await r.json();
+        if (!data.error) return data;
+      }
+    } catch {
+      /* 네트워크 등 */
     }
-  } catch {
-    /* 네트워크 또는 GitHub Pages 등 API 없음 */
   }
   const staticUrl = new URL("treemap-data.json", window.location.href).href;
   const r2 = await fetch(`${staticUrl}?_=${Date.now()}`, {
