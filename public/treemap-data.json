@@ -196,40 +196,64 @@
         "totalSizeBytes": 1825361101,
         "children": [
           {
-            "name": "portfolio_2024.pdf",
-            "value": 646699361,
+            "name": "2022152005_김민진_포트폴리오.pdf",
+            "value": 576041283,
             "extension": ".pdf",
-            "size_human": "616.74 MB"
+            "size_human": "549.36 MB"
           },
           {
-            "name": "manual_archive.pdf",
-            "value": 427656029,
+            "name": "인터랙션융합디자인1_Final_2022152005_김민진.pdf",
+            "value": 188588676,
             "extension": ".pdf",
-            "size_human": "407.84 MB"
+            "size_human": "179.85 MB"
           },
           {
-            "name": "spec_document.pdf",
-            "value": 292057776,
+            "name": "[커뮤니케이션디자인]2022152005 김민진_소책자 발표.pdf",
+            "value": 153929290,
             "extension": ".pdf",
-            "size_human": "278.53 MB"
+            "size_human": "146.80 MB"
           },
           {
-            "name": "slides_export.pdf",
-            "value": 203397380,
+            "name": "김민진 포트폴리오.pdf",
+            "value": 145435460,
             "extension": ".pdf",
-            "size_human": "193.97 MB"
+            "size_human": "138.70 MB"
           },
           {
-            "name": "reference_scan.pdf",
-            "value": 161674840,
+            "name": "(인쇄용)색상수정찐최종_포스터_2024 동아리거리제.pdf",
+            "value": 139777657,
             "extension": ".pdf",
-            "size_human": "154.19 MB"
+            "size_human": "133.30 MB"
           },
           {
-            "name": "invoice_batch.pdf",
-            "value": 93875715,
+            "name": "g.pdf",
+            "value": 139777657,
             "extension": ".pdf",
-            "size_human": "89.53 MB"
+            "size_human": "133.30 MB"
+          },
+          {
+            "name": "(인쇄용)색상수정최종_포스터_2024 동아리거리제.pdf",
+            "value": 133706564,
+            "extension": ".pdf",
+            "size_human": "127.51 MB"
+          },
+          {
+            "name": "김민진_포트폴리오.pdf",
+            "value": 109621711,
+            "extension": ".pdf",
+            "size_human": "104.54 MB"
+          },
+          {
+            "name": "1.pdf",
+            "value": 132195917,
+            "extension": ".pdf",
+            "size_human": "126.07 MB"
+          },
+          {
+            "name": "2022152005_김민진_week1.pdf",
+            "value": 106286886,
+            "extension": ".pdf",
+            "size_human": "101.36 MB"
           }
         ]
       },
